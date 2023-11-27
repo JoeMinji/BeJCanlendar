@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- 페이지 호환성 설정 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 반응형 웹 디자인을 위한 뷰포트 설정 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 외부 CSS 파일 링크 -->
+  <link rel="stylesheet" href="bej_home.css">
+  <!-- 웹 페이지 제목 -->
+  <title>BE' J Calendar</title>
+</head>
+<body>
+  <!-- 캘린더 전체를 감싸는 div -->
+  <div class="calendar">
+    <!-- 캘린더의 헤더 부분 -->
+    <div class="header">
+      <!-- 연도와 월을 표시하는 부분 -->
+      <div class="year-month"></div>
+      <!-- 이전/오늘/다음으로 이동하는 버튼을 포함하는 네비게이션 부분 -->
+      <div class="nav">
+        <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+        <button class="nav-btn go-today" onclick="goToday()">오늘</button>
+        <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+      </div>
+    </div>
+    <!-- 캘린더의 주요 내용 부분 -->
+    <div class="main">
+      <!-- 요일을 표시하는 부분 -->
+      <div class="days">
+        <div class="day">일</div>
+        <div class="day">월</div>
+        <div class="day">화</div>
+        <div class="day">수</div>
+        <div class="day">목</div>
+        <div class="day">금</div>
+        <div class="day">토</div>
+      </div>
+      <!-- 날짜들이 표시될 부분 -->
+      <div class="dates"></div>
+    </div>
+  </div>
+
+  <!-- 오른쪽 상단에 위치할 점선 사각형 -->
+  <div class="today-plan-box">
+    <div class="today-plan-title">오늘의 일정</div>
+  </div>
+
+  <!-- 오른쪽 하단에 위치할 회색 사각형 -->
+  <div class="todo-list-box">
+    <div class="todo-list-title">todo list</div>
+  </div>
+
+  <!-- 캘린더 관련 JavaScript 파일 링크 -->
+  <script src="bej_home.js"></script>
+  
+</body>
+</html>
+
